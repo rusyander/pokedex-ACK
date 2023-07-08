@@ -1,0 +1,37 @@
+@import 'reset';
+@import 'variables/globals';
+body {
+  font: var(--font-m);
+  color: var(--primary-color);
+}
+
+.app {
+  min-height: 100vh;
+  background: var(--bg-color);
+  color: var(--primary-color);
+}
+
+.content-page {
+  display: flex;
+}
+
+.page-wrapper {
+  flex-grow: 1;
+  flex-shrink: 100;
+  padding: 20px 20px 20px 45px;
+  height: calc(100vh - var(--navbar-height));
+  overflow-y: auto;
+}
+
+*::-webkit-scrollbar {
+  width: 12px;
+  height: 8px;
+}
+*::-webkit-scrollbar-track {
+  background: var(--card-bg);
+}
+*::-webkit-scrollbar-thumb {
+  background: var(--invert-primary-color);
+  border-radius: 20px;
+  border: 2px solid var(--primary-color);
+}

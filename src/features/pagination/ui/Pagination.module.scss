@@ -1,0 +1,19 @@
+.pagination {
+  padding: 0 10px;
+  position: absolute;
+  bottom: 0;
+  right: 10;
+  width: 100%;
+  height: var(--pagination-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--border-color);
+}
+
+.paginationElement {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
