@@ -72,8 +72,6 @@ export const Pokedex = memo((props: PokedexProps) => {
     pokeFunc();
   }, [url]);
 
-  // console.log('fullInfo', fullInfo);
-
   // ------------------------------ Filter ------------------------------
 
   const [typeSelected, setTypeSelected] = useState({
@@ -99,7 +97,6 @@ export const Pokedex = memo((props: PokedexProps) => {
     shadow: false,
   });
   const [filteredData, setFilteredData]: any = useState();
-  // console.log('filteredData', filteredData);
 
   const handleCheckbox = (e: any) => {
     setTypeSelected({
@@ -115,23 +112,7 @@ export const Pokedex = memo((props: PokedexProps) => {
       setFilteredData(filteredResults);
       console.log('filteredResults1111', filteredResults);
     } else {
-      // const filteredResults = fullInfo.filter(
-      //   (pokemon: any) =>
-      //     !pokemon.types
-      //       .map((type: any) => type.type.name)
-      //       .includes(e.target.name)
-      // );
-
-      // setFilteredData([...filteredResults]);
-      // console.log('filteredResults2222', filteredResults);
-
-      // setFilteredData(filteredResults);
       setFilteredData(fullInfo);
-      // const falseValuesArray = Object.values(typeSelected);
-      // if (!falseValuesArray.includes(true)) {
-      //   setFilteredData(fullInfo);
-      // }
-      // console.log(falseValuesArray);
     }
   };
 
